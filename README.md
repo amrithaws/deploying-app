@@ -15,3 +15,4 @@ for noninternet-RT-netflix associate private_netflix-2a and private_netflix-2b b
 Make sure to make the public_netflix-2a and public_nrtflix-2b both are enabled as auto assign public address under actions tab by selecting them.
 Now lunch one server with ubuntu distribution.
 under security group of the server edit that to all trafic but keep ki my ip.
+Now ssh into the ubuntu saerver and update the server with cmd sudo apt-get update.
