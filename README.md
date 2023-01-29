@@ -6,3 +6,10 @@ Create public subnet with range of 10.1.1.0/24 with name of public_netlix-2a
 Create one more public subnet with range of 10.1.2.0/24 with name of public_netlix-2b
 Create private subnet with range of 10.1.3.0/24 with name of private_netflic-2a
 Create private subnet with range of 10.1.4.0/24 with name of private_netflic-2b
+Create a IGW and attach to the netflic VPC
+Now we have to create the rout table where Our vpc would have been created one route table name it as Internet-RT-Netflx.
+Now create another routtable for our VPC with name noninternet-RT-Netflix.
+now associate the subnets the rout tables.
+for internet-RT-neflix associate public_netflix-2a and public_netflix-2b along with routes add route through IGW
+for noninternet-RT-netflix associate private_netflix-2a and private_netflix-2b but no routs to added for this as it is noninternet route table.
+
