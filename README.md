@@ -12,4 +12,6 @@ Now create another routtable for our VPC with name noninternet-RT-Netflix.
 now associate the subnets the rout tables.
 for internet-RT-neflix associate public_netflix-2a and public_netflix-2b along with routes add route through IGW
 for noninternet-RT-netflix associate private_netflix-2a and private_netflix-2b but no routs to added for this as it is noninternet route table.
-
+Make sure to make the public_netflix-2a and public_nrtflix-2b both are enabled as auto assign public address under actions tab by selecting them.
+Now lunch one server with ubuntu distribution.
+under security group of the server edit that to all trafic but keep ki my ip.
