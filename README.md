@@ -16,3 +16,5 @@ Make sure to make the public_netflix-2a and public_nrtflix-2b both are enabled a
 Now lunch one server with ubuntu distribution.
 under security group of the server edit that to all trafic but keep ki my ip.
 Now ssh into the ubuntu saerver and update the server with cmd sudo apt-get update.
+Now install web server called apache2 cmd for that is sudo apt-get install apache2
+Next is website architecture
