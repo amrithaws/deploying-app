@@ -18,3 +18,13 @@ under security group of the server edit that to all trafic but keep ki my ip.
 Now ssh into the ubuntu saerver and update the server with cmd sudo apt-get update.
 Now install web server called apache2 cmd for that is sudo apt-get install apache2
 Next is website architecture
+Now go to the cd /var/www/html where we ls we will get file as index.html
+so if change index.html change the page will change in front end, so for now lets delete the index.html page by sudo rm index.html
+Now create your own index.html page and write below code
+<html>
+  <body>
+    <h1> Welcome to the home page</h1>
+  </body>
+  </html>
+  save and exit :wq!
+  
