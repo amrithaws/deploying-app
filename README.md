@@ -27,4 +27,18 @@ Now create your own index.html page and write below code
   </body>
   </html>
   save and exit :wq!
+  Now create the image or AMI of the image which we launched earlier.
+  Now againg go the index.html and modify the index.html as below
+  <html>
+  <body>
+    <h1> Welcome to the streaming page</h1>
+  </body>
+  </html>
+  save and exit :wq!
+  Now create the image or AMI of the image which we launched earlier.
+  We have to launch the 2 servers through the AMI's or image which we created 
+  as we have launched the 2 servers with the 2 images now inorder to talk to private subnets we need our pem file
+  to copy pem file from desktop to ec2 instance we can do it via Winscp 
+  now ssh into private server which is netflix-homepage through >>>> ssh -i jenkins.pem ubuntu@10.1.3.38>>>> which is your netflix home page private address.
+  now check if apache2 is active or not as we have configured befor to command is sudo systemctl status apache2
   
