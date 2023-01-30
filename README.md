@@ -40,9 +40,10 @@ Now create your own index.html page and write below code
   as we have launched the 2 servers with the 2 images now inorder to talk to private subnets we need our pem file
   to copy pem file from desktop to ec2 instance we can do it via Winscp 
   now ssh into private server which is netflix-homepage through >>>> ssh -i jenkins.pem ubuntu@10.1.3.38>>>> which is your netflix home page private address.
-  now check if apache2 is active or not as we have configured befor to command is sudo systemctl status apache2
+  now check if apache2 is active or not as we have configured befor to check command is sudo systemctl status apache2
   come out of the private server via logout command
   come to the public subnet public server
-  
+  againg ssh into private server which is netflix-streaming through >>>> ssh -i jenkins.pem ubuntu@10.1.4.85>>>> which is your netflix home page private address.
+  now check if apache2 is active or not as we have configured befor. tocheck command is sudo systemctl status apache2
   
   
