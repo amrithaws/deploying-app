@@ -46,4 +46,24 @@ Now create your own index.html page and write below code
   againg ssh into private server which is netflix-streaming through >>>> ssh -i jenkins.pem ubuntu@10.1.4.85>>>> which is your netflix home page private address.
   now check if apache2 is active or not as we have configured befor. tocheck command is sudo systemctl status apache2
   
+  Lets create the load balancer here
+  reason for creating the application load balancer is it provides the path based routing.
+  here while creating the load balancer we have to keep in mind that it will allow only HTTP protocall only
+  after that select to AZ of load balancer, inorder to connect to private servers the az's should be public subnets because its internet facing ALB.
+  create two target groups one is metflix-homepage and netflix-streaming and register the private instances which we created netflix-homepage for netflix-homepage     target and netflix-streaming for netflix-streamimg target.
+  Now we can specify the rules for the load balancer.
+  under add rules as if url/home then forward to welcome to home page (means netflix-homepage target group)
+  and if url/watch then forward to the welcome to the streaming page (means netflix-streaming traget group)
+  In order to redirected to the /home and /watch url there is small modification required in server.
+  ssh into public server first and ssh to netflix-steaming server and uder
+  cd /var/html create folder
+  sudo mkdir watch
+  and paste the file present in cd /var/www/htlm which is index.html
+  commd for pasting the file sudo cp ./index.htlm ./watch
+  perform the same for the netflix-homepage server as well
   
+  NOTE: WHILE SPECOFYING THE RULE IN THE LOAD BALNCER MAKE SURE TO PUT THE * such AS
+  /home* and /watch*
+  
+  
+ 
