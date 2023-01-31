@@ -66,4 +66,12 @@ Now create your own index.html page and write below code
   /home* and /watch*
   
   
+  LAST STEP is
+  Go to the freenom website basically it is website which provide the free domain names 
+  after that go to route53 create a hosted zone and give the domain name which is created by you and enter name servers which you bought from site in freenom.
+  after create a record and select alias in aws and select load balancer and save .
+  and create and another record and with alias and give www on name and select netflix load balancer.
+  by which whenever you hit that domain name your website will open up.
+  
+  
  
